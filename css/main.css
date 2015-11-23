@@ -112,7 +112,40 @@ img {
 }
 
 body  {
+  margin: 0 115px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+
+}
+
+/* HEADER */
+
+.banner {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding-top: .75em;
+  padding-bottom: .75em;
   margin: 0;
+}
+
+.banner a {
+  color: #fff;
+}
+
+.home-nav li {
+  float: left;
+  padding-left: 4em;
 }
 
 /* PORTFOLIO */
