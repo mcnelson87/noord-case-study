@@ -158,24 +158,49 @@ a:hover {
   color: #818181;
 }
 
-h1 a:hover  {
+header h1 {
+  float: left;
+  position: relative;
+  width: 50%;
+  margin: 0;
+  border: solid green 1px;
+
+}
+
+header h1 a:hover  {
   color: #000;
 }
 
-.home-nav li {
-  float: left;
-  padding-left: 4em;
+.home-nav ul {
+  float: right;
+  position: relative;
+  width: 50%;
+  border: solid green 1px;
+  margin: 0;
+  padding: 0;
+  font-size: smaller;
 }
 
-.page-intro h2  {
+.home-nav li  {
+  float: left;
+  position: relative;
+  padding-right: 4em;
+}
+
+.page-intro {
+  clear: left;
+  float: left;
+  position: relative;
+  width: 25%;
+  font-weight: normal;
+  font-size: 2em;
+}
+
+.jumbo-carousel {
 
 }
 
 /* PAGE CONTENT */
-
-.page-content p {
-
-}
 
 .page-content a {
   text-decoration: none;
@@ -187,11 +212,38 @@ h1 a:hover  {
   transition-duration: 300ms;
 }
 
+.page-content .body-text  {
+  float: right;
+  position: relative;
+  width: 50%;
+  padding: 0 2em;
+  margin: 0;
+  border: solid red 1px;
+}
+
+.page-content .services {
+  font-size: smaller;
+  border: solid red 1px;
+  float: left;
+  position: relative;
+  width: 50%;
+}
+
+.page-content .services p {
+  float: left;
+  position: relative;
+  width: 15%;
+  padding: 0 15em 8em 0;
+  border: solid blue 1px;
+}
+
+
 /* PORTFOLIO */
 
 .portfolio  {
   min-width: 1120px;
   text-align: center;
+  clear: both;
 }
 
 .portfolio .thumbnail  {
