@@ -112,7 +112,11 @@ img {
 }
 
 body  {
-  margin: 0 115px;
+  margin: 0 4em;
+}
+
+h1  {
+  font-size: 2em;
 }
 
 ul {
@@ -131,6 +135,7 @@ a:hover {
 /* HEADER */
 
 .banner {
+
   text-align: center;
   background-color: #000;
   color: #fff;
@@ -150,29 +155,30 @@ a:hover {
 
 /* PORTFOLIO */
 
+.portfolio  {
+  min-width: 1120px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .portfolio .thumbnail  {
+  max-width: 440px;
+  max-height: 300px;
   float: left;
+  display: inline-block;
+  overflow: hidden;
   position: relative;
-  width: auto;
-  height: auto;
-}
-
-.portfolio .vertical {
-
-}
-
-.portfolio .thumbnail img {
-  position: relative;
+  border: solid red 0.5em;
   z-index: -10;
 }
-
-
 
 .portfolio .thumbnail h2  {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin: 0;
   text-align: center;
 
 }
