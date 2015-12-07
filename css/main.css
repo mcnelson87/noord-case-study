@@ -114,22 +114,24 @@ img {
 }
 
 body  {
-  margin: 0;
+  max-width: 70em;
+  margin: 0 auto;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  background-image: url("../img/jael-jumbo.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 8em;
 }
 
 .position-left  {
   float: left;
   position: relative;
-  width: 45%;
-  margin: 0;
+  max-width: 50%;
 }
 
 .position-right {
   float: right;
   position: relative;
-  width: 45%;
-  margin: 0;
+  max-width: 50%;
 }
 
 h1  {
@@ -157,12 +159,12 @@ a:hover {
 /* HEADER */
 
 .banner {
-
   text-align: center;
   background-color: #000;
   color: #fff;
-  padding-top: .75em;
-  padding-bottom: .75em;
+  font-size: .85em;
+  font-weight: 100;
+  padding: .75em 0;
   margin: 0;
 }
 
@@ -175,8 +177,8 @@ a:hover {
 }
 
 #home-title {
-  margin-left: 3em;
   border: solid green 1px;
+  padding-top: .66em;
 
 }
 
@@ -186,7 +188,7 @@ a:hover {
 
 #home-nav ul {
   border: solid green 1px;
-  padding: 0;
+  padding: 2em 15em 0 0;
   font-size: smaller;
 }
 
@@ -197,24 +199,18 @@ a:hover {
 }
 
 #page-intro {
-  clear: left;
-  width: 25%;
+  position: absolute;
+  max-width: 25%;
   font-weight: normal;
   font-size: 2em;
-  margin-left: 3em;
-}
-
-#jumbo-carousel {
-  max-width: 1000px;
-  margin: 0 3em;
-  display: inline-block;
-  text-align: center;
-  float: none;
-  clear: none;
+  padding-top: 4em;
 }
 
 /* PAGE CONTENT */
 
+.page-content {
+  padding-top: 45em;
+}
 .page-content a {
   text-decoration: none;
   color: #000;
@@ -226,22 +222,28 @@ a:hover {
 }
 
 .page-content #body-text  {
-  padding: 0 2em;
-  margin-right: 3em;
+  padding: 0;
   border: solid red 1px;
 }
 
 .page-content #services {
   font-size: smaller;
-  margin-left: 3em;
+  padding: 0;
   border: solid red 1px;
 }
 
 .page-content #services p {
   float: left;
   position: relative;
-  width: 15%;
-  padding: 0 15em 8em 0;
+  max-width: 50%;
+  border: solid green 1px;
+}
+
+.page-content #services ul {
+  float: right;
+  position: relative;
+  max-width: 50%;
+  padding: 0 15em 0 0;
   border: solid blue 1px;
 }
 
@@ -249,7 +251,6 @@ a:hover {
 /* PORTFOLIO */
 
 #portfolio  {
-  min-width: 1130px;
   text-align: center;
   clear: both;
   display: inline-block;
