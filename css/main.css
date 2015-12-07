@@ -323,7 +323,6 @@ a:hover {
 }
 
 #portfolio .thumbnail:hover img {
-  position: relative;
   z-index: -10;
   opacity: 0.25;
   transition: 300ms;
