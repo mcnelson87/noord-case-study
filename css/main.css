@@ -195,8 +195,6 @@ header h1 a:hover  {
 
 #page-intro {
   clear: left;
-  float: left;
-  position: relative;
   width: 25%;
   font-weight: normal;
   font-size: 2em;
@@ -218,17 +216,17 @@ header h1 a:hover  {
   transition-duration: 300ms;
 }
 
-.page-content .body-text  {
+.page-content #body-text  {
   padding: 0 2em;
   border: solid red 1px;
 }
 
-.page-content .services {
+.page-content #services {
   font-size: smaller;
   border: solid red 1px;
 }
 
-.page-content .services p {
+.page-content #services p {
   float: left;
   position: relative;
   width: 15%;
@@ -239,14 +237,14 @@ header h1 a:hover  {
 
 /* PORTFOLIO */
 
-.portfolio  {
+#portfolio  {
   min-width: 1130px;
   text-align: center;
   clear: both;
   border: purple solid 1px;
 }
 
-.portfolio .thumbnail  {
+#portfolio .thumbnail  {
   max-width: 440px;
   max-height: 300px;
   display: inline-block;
@@ -258,7 +256,7 @@ header h1 a:hover  {
   padding: 0;
 }
 
-.portfolio .thumbnail h2  {
+#portfolio .thumbnail h2  {
   float: none;
   position: absolute;
   top: 50%;
