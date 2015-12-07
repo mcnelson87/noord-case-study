@@ -105,8 +105,6 @@ box-sizing: inherit;
 }
 
 img {
-  width: auto;
-  height: auto;
   max-width: 70em;
   max-height: 100%;
   margin: 0;
@@ -114,18 +112,9 @@ img {
 }
 
 body  {
-  margin: 0 auto;
+  margin: 0;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
-
-}
-
-.scroll {
-  position: fixed;
-  display: block;
-  overflow-y: auto;
-  height: 100%;
-  width: 85%;
-  margin: 0 4em;
+  width: 100%;
 }
 
 .position-left  {
@@ -138,6 +127,15 @@ body  {
   float: right;
   position: relative;
   max-width: 50%;
+}
+
+#scroll {
+  overflow-y: scroll;
+  height: 100%;
+  padding: 0 1em 0 5em;
+  position: absolute;
+  max-width: 64em;
+  border: solid pink 1px;
 }
 
 h1  {
@@ -163,29 +161,29 @@ a:hover {
 }
 
 /* ICON BAR */
+
 #icons ul {
-  margin: 4.5em 0;
-  padding: 0;
-  width: 25px;
-  display: block;
+  margin: 0;
+  padding: 0 2.5em;
   text-align: center;
   border: solid orange 1px;
 }
 
 #icons li {
   display: block;
-  width: 25px:
+  width: 20px:
 }
 
-/* HEADER */
+/* BANNER */
 
 .banner {
+  clear: both;
   text-align: center;
   background-color: #000;
   color: #fff;
-  font-size: .85em;
+  font-size: .75em;
   font-weight: 100;
-  padding: .75em 0;
+  padding: 0 0;
   margin: 0;
 }
 
@@ -196,6 +194,8 @@ a:hover {
 .banner a:hover {
   color: #818181;
 }
+
+/* HEADER */
 
 #home-title {
   border: solid green 1px;
@@ -208,9 +208,11 @@ a:hover {
 }
 
 #home-nav ul {
+  max-width: 100%;
   border: solid green 1px;
   padding: 2em 15em 0 0;
   font-size: smaller;
+  font-weight: 200;
 }
 
 #home-nav li  {
@@ -226,20 +228,22 @@ a:hover {
   font-size: 2em;
   padding-top: 4em;
   z-index: 10;
+  border: solid purple 1px;
 
 }
 
 #jael-jumbo {
   display: block;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 50em;
+  max-width: 100%;
+  height: auto;
   z-index: -10;
+  border: solid teal 1px;
 }
 
 /* PAGE CONTENT */
 
 .page-content {
+  max-width: 100%;
   padding-top: 5em;
 }
 .page-content a {
@@ -266,15 +270,16 @@ a:hover {
 .page-content #services p {
   float: left;
   position: relative;
-  max-width: 50%;
+  padding: 0;
+  text-indent: 0;
   border: solid green 1px;
 }
 
 .page-content #services ul {
   float: right;
   position: relative;
-  max-width: 50%;
-  padding: 0 15em 0 0;
+  max-width: 100%;
+  padding: 0 6em;
   border: solid blue 1px;
 }
 
@@ -282,17 +287,15 @@ a:hover {
 /* PORTFOLIO */
 
 #portfolio  {
-  width: 100%;
-  min-width: 50em;
+  width: 58.5em;
   text-align: center;
-  clear: both;
   display: inline-block;
   border: purple solid 1px;
 }
 
 #portfolio .thumbnail  {
-  max-width: 400px;
-  max-height: 260px;
+  max-width: 370px;
+  max-height: 230px;
   display: inline-block;
   overflow: hidden;
   position: relative;
