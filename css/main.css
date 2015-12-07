@@ -134,10 +134,8 @@ body  {
   height: 100%;
   position: absolute;
   max-width: 64em;
-  margin-left: 5em;
-  margin-right: 2em;
+  margin: 0 2em 0em 4em;
   padding: 0 1.625em 0 5em
-  border: solid pink 1px;
 }
 
 h1  {
@@ -169,7 +167,6 @@ a:hover {
 #icons ul {
   padding: 0.5em 2.5em;
   text-align: center;
-  border: solid orange 1px;
 }
 
 #icons li {
@@ -207,10 +204,7 @@ a:hover {
 
 #home-title {
   margin-top: 0;
-  border: solid green 1px;
   padding-top: .66em;
-  tex
-
 }
 
 #home-title a:hover  {
@@ -219,7 +213,6 @@ a:hover {
 
 #home-nav ul {
   max-width: 100%;
-  border: solid green 1px;
   padding: 0;
   margin: 2em 10em 0 0;
   font-size: smaller;
@@ -229,7 +222,6 @@ a:hover {
 #home-nav li  {
   width: auto;
   padding-right: 4em;
-  border: solid green 1px;
 }
 
 #page-intro {
@@ -239,7 +231,6 @@ a:hover {
   font-size: 2em;
   padding-top: 3em;
   z-index: 10;
-  border: solid purple 1px;
 }
 
 #jael-jumbo {
@@ -248,7 +239,6 @@ a:hover {
   height: auto;
   padding-left: 5em;
   z-index: -10;
-  border: solid teal 1px;
 }
 
 /* PAGE CONTENT */
@@ -272,20 +262,17 @@ a:hover {
 .page-content #body-text {
   padding: 0;
   text-indent: 30px;
-  border: solid red 1px;
 }
 
 .page-content #services {
   font-size: smaller;
   padding: 0;
-  border: solid red 1px;
 }
 
 .page-content #services p {
   float: left;
   position: relative;
   padding: 0;
-  border: solid green 1px;
 }
 
 .page-content #services ul {
@@ -294,7 +281,6 @@ a:hover {
   max-width: 100%;
   margin: 0;
   padding: 0 6em;
-  border: solid blue 1px;
 }
 
 
@@ -305,10 +291,9 @@ a:hover {
   text-align: center;
   display: inline-block;
   padding-top: 2.125em;
-  border: purple solid 1px;
 }
 
-#portfolio .thumbnail  {
+#portfolio .thumbnail {
   max-width: 370px;
   max-height: 230px;
   display: inline-block;
@@ -316,11 +301,15 @@ a:hover {
   position: relative;
   border: solid red 0.5em;
   z-index: -10;
-  margin: 0;
-  padding: 0;
+  background-color: hsla(360, 100%, 100%, 0.5);
 }
 
-#portfolio .thumbnail h2  {
+#portfolio img  {
+  position: relative;
+  z-index: -10;
+}
+
+#portfolio h2  {
   float: none;
   position: absolute;
   top: 50%;
@@ -328,23 +317,44 @@ a:hover {
   transform: translate(-50%, -50%);
   margin: 0;
   text-align: center;
+  z-index: 10;
 }
 
-#portfolio a #kuoni-annual img {
-  background-color: hsla(0,100%,100%,0.5);
-}
-
-#portfolio a:hover #kuoni-annual img {
+#portfolio article:hover {
   background-color: hsla(0,0%,0%,0.5);
 }
 
 
+/* FOOTER */
 
+footer {
+  width: 58.5em;
+  max-width: 100%;
+  padding-top: 4.125em;
+  font-weight: 200;
+}
 
+footer #copyright {
+  padding: 0;
+  width: 20%;
+  text-align: right;
+  text-indent: 40px;
+}
 
+footer #noord-info p {
+  float: left;
+  position: relative;
+  padding: 0 2em 2em 2em;
+  width: 40%;
+}
 
-
-
+footer #arrow {
+  float: left;
+  position: static;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
 
 
 
