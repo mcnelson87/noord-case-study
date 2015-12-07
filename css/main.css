@@ -299,14 +299,7 @@ a:hover {
   display: inline-block;
   overflow: hidden;
   position: relative;
-  border: solid red 0.5em;
-  z-index: -10;
-  background-color: hsla(360, 100%, 100%, 0.5);
-}
-
-#portfolio img  {
-  position: relative;
-  z-index: -10;
+  border: solid #fff 0.5em;
 }
 
 #portfolio h2  {
@@ -317,13 +310,24 @@ a:hover {
   transform: translate(-50%, -50%);
   margin: 0;
   text-align: center;
+  font-weight: 200;
+  opacity: 0;
   z-index: 10;
 }
 
-#portfolio article:hover {
-  background-color: hsla(0,0%,0%,0.5);
+#portfolio .thumbnail:hover h2 {
+  opacity: 1;
+  z-index: 10;
+  color: #000;
+  transition: 300ms;
 }
 
+#portfolio .thumbnail:hover img {
+  position: relative;
+  z-index: -10;
+  opacity: 0.25;
+  transition: 300ms;
+}
 
 /* FOOTER */
 
